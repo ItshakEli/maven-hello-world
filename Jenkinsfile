@@ -24,6 +24,6 @@ pipeline {
     }
   }
   environment {
-    ENV1 = '100'
+    ENV1 = '10'
   }
 }
