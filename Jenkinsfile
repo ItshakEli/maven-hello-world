@@ -16,6 +16,12 @@ pipeline {
         sleep 10
       }
     }
+    stage('3rstage') {
+      steps {
+        sleep 1
+        build(job: 'job1', propagate: true, wait: true, quietPeriod: 10)
+      }
+    }
   }
   environment {
     ENV1 = '100'
