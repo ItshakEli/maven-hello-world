@@ -17,4 +17,7 @@ pipeline {
       }
     }
   }
+  environment {
+    ENV1 = '100'
+  }
 }
